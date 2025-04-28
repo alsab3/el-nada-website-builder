@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
@@ -30,8 +31,8 @@ const Home = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild className="bg-construction-gold hover:bg-construction text-white border-none">
-                <Link to="/about">
-                  {t('learn_more')}
+                <Link to="/services">
+                  {t('explore_our_services')}
                 </Link>
               </Button>
               <Button asChild variant="outline" className="text-white border-white hover:bg-white hover:text-construction">
@@ -67,7 +68,7 @@ const Home = () => {
               
               <div className="flex justify-center md:justify-start">
                 <Button asChild className="bg-construction hover:bg-construction-gold">
-                  <Link to="/about">{t('learn_more')}</Link>
+                  <Link to="/about">{t('learn_more_about_us')}</Link>
                 </Button>
               </div>
             </div>
@@ -115,7 +116,7 @@ const Home = () => {
           </div>
           <div className="text-center mt-10">
             <Button asChild className="bg-construction hover:bg-construction-gold">
-              <Link to="/services">{t('learn_more')}</Link>
+              <Link to="/services">{t('view_all_services')}</Link>
             </Button>
           </div>
         </div>
@@ -178,7 +179,7 @@ const Home = () => {
           </div>
           <div className="text-center mt-10">
             <Button asChild className="bg-construction hover:bg-construction-gold">
-              <Link to="/projects">{t('learn_more')}</Link>
+              <Link to="/projects">{t('see_our_projects')}</Link>
             </Button>
           </div>
         </div>
@@ -207,13 +208,13 @@ const Home = () => {
               </ul>
               <div className="mt-8">
                 <Button asChild className="bg-construction-gold hover:bg-white hover:text-construction">
-                  <Link to="/contact">{t('contact_us')}</Link>
+                  <Link to="/contact">{t('contact_us_now')}</Link>
                 </Button>
               </div>
             </div>
             <div className="hidden md:block">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.6750561175262!2d31.425793!3d30.0414147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583cc197d13ef7%3A0x7a77b4eaaa171ad!2z2KfZhNiq2KzZhdiuINin2YTYrtmA2KfZhdisINin2YTZgtmA2KfZh9ix2Kkg2KfZhNmA2KzYr9mK2K_YqQ!5e0!3m2!1sen!2sus!4v1683059084973!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.6750561175262!2d31.425793!3d30.0414147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583cc197d13ef7%3A0x7a77b4eaaa171ad!2z2KfZhNiq2KzZhdiuINin2YTYrtmA2KfZhdizINin2YTZgtmA2KfZh9ix2Kkg2KfZhNmA2KzYr9mK2K_YqQ!5e0!3m2!1sen!2sus!4v1683059084973!5m2!1sen!2sus" 
                 width="100%" 
                 height="400" 
                 style={{ border: 0 }} 
