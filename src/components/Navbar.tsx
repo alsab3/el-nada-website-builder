@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { Button } from "@/components/ui/button";
-import { Menu, X, Home, Users, Briefcase, HardDrive, FileText, ShieldCheck, PhoneOutgoing } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const { language, toggleLanguage, t } = useLanguage();
@@ -26,14 +26,14 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: t('home'), path: '/', icon: <Home size={18} className="mr-2" /> },
-    { name: t('about'), path: '/about', icon: <Users size={18} className="mr-2" /> },
-    { name: t('services'), path: '/services', icon: <Briefcase size={18} className="mr-2" /> },
-    { name: t('team'), path: '/team', icon: <Users size={18} className="mr-2" /> },
-    { name: t('equipment'), path: '/equipment', icon: <HardDrive size={18} className="mr-2" /> },
-    { name: t('projects'), path: '/projects', icon: <FileText size={18} className="mr-2" /> },
-    { name: t('quality'), path: '/quality', icon: <ShieldCheck size={18} className="mr-2" /> },
-    { name: t('contact'), path: '/contact', icon: <PhoneOutgoing size={18} className="mr-2" /> },
+    { name: t('home'), path: '/' },
+    { name: t('about'), path: '/about' },
+    { name: t('services'), path: '/services' },
+    { name: t('team'), path: '/team' },
+    { name: t('equipment'), path: '/equipment' },
+    { name: t('projects'), path: '/projects' },
+    { name: t('quality'), path: '/quality' },
+    { name: t('contact'), path: '/contact' },
   ];
 
   return (
@@ -56,9 +56,8 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-construction-accent transition-colors flex items-center"
+                className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-construction-accent transition-colors"
               >
-                {item.icon}
                 {item.name}
               </Link>
             ))}
@@ -99,10 +98,9 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="flex items-center px-3 py-2 text-base font-medium text-gray-700 hover:text-construction-accent transition-colors"
+                className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-construction-accent transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {item.icon}
                 {item.name}
               </Link>
             ))}
