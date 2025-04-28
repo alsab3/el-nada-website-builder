@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { Button } from "@/components/ui/button";
-import { Construction, Building, Settings } from 'lucide-react';
+import { Construction, Building, Settings, MapPin, Phone, Mail } from 'lucide-react';
 
 const Home = () => {
   const { t } = useLanguage();
