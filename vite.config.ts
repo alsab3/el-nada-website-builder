@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 // Update to support GitHub Pages with custom domain
 export default defineConfig(({ mode }) => ({
-  base: "https://elnada.dpdns.org/", // 👈 Your custom domain
+  base:  "/", // 👈 Your custom domain
   server: {
     host: "::",
     port: 8080,
